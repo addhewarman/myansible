@@ -1,0 +1,58 @@
+TASK: [debug var=ec2_facts] ***************************************************
+ok: [localhost] =&gt; {
+"ec2_facts": {
+"ansible_facts": {
+"ansible_ec2_ami_id": "ami-xxxxx",
+"ansible_ec2_ami_launch_index": "0",
+"ansible_ec2_ami_manifest_path": "(unknown)",
+"ansible_ec2_block_device_mapping_ami": "/dev/sda1",
+"ansible_ec2_block_device_mapping_ephemeral0": "sdb",
+"ansible_ec2_block_device_mapping_ephemeral1": "sdc",
+"ansible_ec2_block_device_mapping_root": "/dev/sda1",
+"ansible_ec2_hostname": "ip-10-xx-xx-xx.ap-southeast-1.compute.internal",
+"ansible_ec2_instance_action": "none",
+"ansible_ec2_instance_id": "i-xxabxx",
+"ansible_ec2_instance_type": "t2.small",
+"ansible_ec2_local_hostname": "ip-10-xx-xx-xx.ap-southeast-1.compute.internal",
+"ansible_ec2_local_ipv4": "10.x.xx.xxxx",
+"ansible_ec2_mac": "02:17:41:4d:4c:91",
+"ansible_ec2_metrics_vhostmd": "<!--?xml version=\"1.0\" encoding=\"UTF-8\"?-->",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_device_number": "0",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_interface_id": "eni-8xx0dxxx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_ipv4_associations_54.xx.xx.xxx": "10.xx.xx.xxxx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_local_hostname": "ip-10-0-xx-x.ap-southeast-1.compute.internal",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_local_ipv4s": "10.xxx.xx.x",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_mac": "02:17:41:4d:4c:91",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_owner_id": "x38xxxx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_public_hostname": "ec2-54-xx-xxx-xxxx.ap-southeast-1.compute.amazonaws.com",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_public_ipv4s": "54.xx.xxx.xxxx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_security_group_ids": "sg-xbxxx3xx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_security_groups": "bastixx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_subnet_id": "subnet-xdxxx2xx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_subnet_ipv4_cidr_block": "10.0.0.0/18",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_vpc_id": "vpc-x0xxx8xx",
+"ansible_ec2_network_interfaces_macs_02_17_41_4d_4c_91_vpc_ipv4_cidr_block": "10.0.0.0/16",
+"ansible_ec2_placement_availability_zone": "ap-southeast-1a",
+"ansible_ec2_placement_region": "ap-southeast-1",
+"ansible_ec2_profile": "default-hvm",
+"ansible_ec2_public_hostname": "ec2-54-xx-xxx-x.ap-southeast-1.compute.amazonaws.com",
+"ansible_ec2_public_ipv4": "54.x.x.x",
+"ansible_ec2_public_key": "ssh-rsa AAAxxzaC1yc2EAAAADxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxrn3IGNMePcms277wgx9X+YI/rVYCxxxxxxxxxMgoTJ/xbdVsxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/h google-staging\n",
+"ansible_ec2_reservation_id": "r-dXXX7XXX",
+"ansible_ec2_security_groups": "bastixx",
+"ansible_ec2_services_domain": "amazonaws.com",
+"ansible_ec2_user_data": null
+},
+"changed": false,
+"invocation": {
+"module_args": "",
+"module_name": "ec2_facts"
+}
+}
+}
+
+PLAY RECAP ********************************************************************
+Get instance ec2 facts -------------------------------------------------- 0.13s
+debug var=ec2_facts ----------------------------------------------------- 0.01s
+Total Timing :0.13s
+localhost : ok=3 changed=0 unreachable=0 failed=0

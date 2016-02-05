@@ -1,0 +1,9 @@
+- name: Initialize EC2 Instance For '{{ name_web_host }}'
+  hosts: localhost
+  connection: local
+  gather_facts: True
+  tasks:
+   - name: Get instance ec2 facts
+     action: ec2_facts
+     register: ec2_facts
+   - debug: var=ec2_facts
