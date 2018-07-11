@@ -1,3 +1,5 @@
+This will help you understand what is ec2.py - dynamic inventory for
+
 1. Login to your ec2 instance, create your playbook
 2. Let's put your ec2.py in same directory also ec2.private-ip.ini
 cp ec2.py ec2.private-ip.ini ~/provisioning/
